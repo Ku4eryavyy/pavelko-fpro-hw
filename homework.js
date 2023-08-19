@@ -9,7 +9,7 @@ let sub = firstNumber - secondNumber;
 let mult = firstNumber * secondNumber;
 let div = firstNumber / secondNumber;
 
-let result = alert(`Your result: \n
+alert(`Your result: \n
 ${firstNumber} + ${secondNumber} = ${add} \n 
 ${firstNumber} - ${secondNumber} = ${sub} \n
 ${firstNumber} * ${secondNumber} = ${mult} \n 
