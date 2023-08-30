@@ -58,11 +58,11 @@ let users = [
     let arrResult = [];
     let sum = 0;
 
-    for(let i = 0; i < users.length; i++) {
-        sum += users[i]['balance'];
-        if(users[i]['balance'] > 2000) {
-            arrResult.push(users[i])
+    users.forEach(item => {
+        sum += item['balance'];
+        if (item['balance'] > 2000) {
+            arrResult.push(item);
         }
-    }
-    console.log(arrResult)
-    console.log(sum)
+    });
+    console.log(arrResult);
+    console.log(sum);
