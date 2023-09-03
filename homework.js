@@ -64,3 +64,29 @@
 
 // const key = generateKey(16, characters);
 // console.log(key); // eg599gb60q926j8i
+
+
+//Рекурсия ( значит, что фунция умеет вызывать сама себя)
+
+// func()
+// function func() { // Бесконечная рекурсия
+// func();
+// }
+
+
+// func();
+// function func() { // Остановка с помощью return
+//     console.log(1);
+// return;
+// }
+
+
+console.log(func(5)); // Нахождение факториала числа 
+function func(number) {
+    if (number === 0) {
+        return 1;
+    }
+    else {
+        return number * func(number - 1);
+    }
+}
