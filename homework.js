@@ -81,12 +81,23 @@
 // }
 
 
-console.log(func(5)); // Нахождение факториала числа 
-function func(number) {
-    if (number === 0) {
-        return 1;
-    }
-    else {
-        return number * func(number - 1);
-    }
+// console.log(func(5)); // Нахождение факториала числа 
+// function func(number) {
+//     if (number === 0) {
+//         return 1;
+//     }
+//     else {
+//         return number * func(number - 1);
+//     }
+// }
+
+
+//                       Обьекты
+// Варианты создания обьектов
+let obj = {
+    apple: 3,
+    bananas: 34,
+    qiwi: 45,
 }
+console.log(obj)
+console.log(obj.apple)
