@@ -92,12 +92,73 @@
 // }
 
 
-//                       Обьекты
+//                       Обьекты( обькты сохраняются в памяти как и массивы)
 // Варианты создания обьектов
-let obj = {
-    apple: 3,
-    bananas: 34,
-    qiwi: 45,
-}
-console.log(obj)
-console.log(obj.apple)
+// let obj = {
+//     apple: 3,
+//     bananas: 34,
+//     qiwi: 45,
+// }
+// console.log(obj)
+
+// console.log(obj.apple) // ключ по котором достаем определенное значение
+
+// obj.apple = 45; // изменение значения для applell
+
+// Object.freeze(obj);// замороженный обьект(защищенный от изменений) так же фриз блокирует полностью обькет, нельзя ни удалить, ни изменить
+// Object.seal(obj);// закрытый обьект(не защищенный от изменений, но защищенный от удаления)
+
+
+// delete obj.apple; // удаление ключа apple из списка обьктов
+
+
+// var name = 'Tom';
+// function tom () {
+//     console.log(this.name + 'Runs');
+// }
+// tom();
+
+// function funcMult (a,b){
+//     console.log(arguments);
+// }
+// funcMult(1,3);
+
+// const obj = {
+//     name: 'Tom',
+//     showName: function () {
+//         console.log(this.name);
+//     }
+// }
+// obj.showName();
+
+// const obj = {
+//     name: 'Tom',
+// }
+
+// const obj2 = {
+//     name: 'Alex',
+// }
+
+// function showContext() {
+//     console.log(this);
+// }
+// showContext.call(obj);
+// showContext.call(obj2);
+
+// const person = {
+//     name: 'Tom',
+//     saySmth: function (word) {
+//         console.log(`${word} ${this.name}`);
+//     }
+// }
+
+// const otherPerson = {
+//     name: 'Alex',
+// }
+
+// person.saySmth.call(otherPerson,'Hello');
+// person.saySmth.bind(otherPerson,'Hello'); // привязывает функцию к обьекту и возвращает уже связку
+
+// const newSaySmth = person.saySmth.bind(otherPerson);
+
+// newSaySmth('Hello');
