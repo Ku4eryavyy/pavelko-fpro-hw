@@ -64,26 +64,27 @@
 // }
 
 //Task 3
-function fillingArrayData() {
-    const numRows = +prompt("Enter the number of rows for a two-world array:");
-    const numCols = +prompt("Enter the number of columns for a two-world array:");
+// function fillingArrayData() {
+//     const numRows = +prompt("Enter the number of rows for a two-world array:");
+//     const numCols = +prompt("Enter the number of columns for a two-world array:");
 
-    const array = [];
+//     const array = [];
 
-    for (let i = 0; i < numRows; i++) {
-        array[i] = [];
+//     for (let i = 0; i < numRows; i++) {
+//         array[i] = [];
 
-        for (let j = 0; j < numCols; j++) {
-            const value = +prompt(`Enter value for element in row ${i}, column ${j}:`);
-            array[i][j] = value;
-        }
-    }
+//         for (let j = 0; j < numCols; j++) {
+//             const value = +prompt(`Enter value for element in row ${i}, column ${j}:`);
+//             array[i][j] = value;
+//         }
+//     }
 
-    return array;
-}
+//     return array;
+// }
 
-const userArray = fillingArrayData();
-console.log(userArray);
+// const userArray = fillingArrayData();
+// console.log(userArray);
+
 
 //Task 4
 
@@ -95,8 +96,9 @@ console.log(userArray);
 //   }
   
 //   let inputString = prompt("Enter the string:");
+
 //   let charactersInput = prompt("Enter characters to delete (no spaces)").split('');
+
 //   let result = removeCharacters(inputString, charactersInput);
-//   console.log("Result: " + result);
-  
-  
+
+// console.log("Result: " + result);
