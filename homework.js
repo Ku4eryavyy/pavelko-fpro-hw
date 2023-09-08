@@ -1,20 +1,19 @@
 function createSumFunction() {
-    let total = 0;  // Змінна для накопичення суми
+    let sum = 0;  // Змінна для накопичення суми
     
-    // Внутрішня функція, яка приймає значення і додає їх до total
     function innerSum(x) {
-      total += x;
-      return total;
+      sum += x;
+      return sum;
     }
     
-    return innerSum;  // Повертаємо внутрішню функцію
+    return sum;  // Повертаємо внутрішню функцію
   }
   
   // Створюємо функцію для накопичення суми
-  const sum = createSumFunction();
+  const sumTotal = createSumFunction();
   
   // Використовуємо функцію замикання
-  console.log(sum(3));  // Виведе 3
-  console.log(sum(5));  // Виведе 8
-  console.log(sum(20));  // Виведе 28
+  console.log(sumTotal(3));  // Виведе 3
+  console.log(sumTotal(5));  // Виведе 8
+  console.log(sumTotal(20));  // Виведе 28
   
