@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(202,238,214,0.86);
+}
+
+#hover-div {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
