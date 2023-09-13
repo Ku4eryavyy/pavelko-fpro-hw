@@ -1,25 +1,25 @@
-// let parent = document.getElementById('hover-div');
-// let newDiv;
+document.addEventListener("DOMContentLoaded", function() {
+    const mainDiv = document.getElementById("mainDiv");
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     parent.addEventListener('mouseover', createNewDiv);
-//     parent.addEventListener('mouseout', deleteNewDiv);
-  
-//     function createNewDiv() {
-//         newDiv = document.createElement('div');
+    mainDiv.addEventListener("mouseover", () => {
+
+        const newDiv = document.createElement("div");
+        newDiv.textContent = "Це новий div";
         
-
-//         newDiv.style.width = '100px';  
-//         newDiv.style.height = '100px';
-//         newDiv.style.backgroundColor = 'blue';
+        newDiv.style.backgroundColor = "lightblue";
+        newDiv.style.padding = "10px";
+        newDiv.style.margin = "5px";
+        newDiv.style.float = "left";
         
-//         parent.appendChild(newDiv);
-//     }
+        mainDiv.parentNode.insertBefore(newDiv, mainDiv.nextSibling);
+    });
 
-//     function deleteNewDiv() {
-//         if (newDiv) {
-//             newDiv.remove(); 
-//             newDiv = null; 
-//         }
-//     }
-// });
+    mainDiv.addEventListener("mouseout", () => {
+        const childDivs = mainDiv.parentNode.querySelectorAll("div");
+        childDivs.forEach((childDiv) => {
+            if (childDiv !== mainDiv) {
+                mainDiv.parentNode.removeChild(childDiv);
+            }
+        });
+    })
+});
