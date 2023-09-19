@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="homework.js"></script>
+    <title>Магазин товарів</title>
 </head>
 <body>
-    
+    <div class="categories">
+        <h2>Категорії</h2>
+        <ul>
+            <li data-category="electronics">Електроніка</li>
+            <li data-category="clothing">Одяг</li>
+            <li data-category="books">Книги</li>
+        </ul>
+    </div>
+
+    <div class="products">
+        <h2>Товари</h2>
+        <ul id="product-list">
+            <!-- Сюди буде вставлятися список товарів -->
+        </ul>
+    </div>
+
+    <div class="product-info">
+        <h2>Інформація про товар</h2>
+        <p id="product-description">Виберіть товар для перегляду інформації.</p>
+        <button id="buy-button" style="display: none;">Купити</button>
+    </div>
 </body>
 </html>
