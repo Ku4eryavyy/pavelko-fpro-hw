@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Форма реєстрації</title>
 </head>
 <body>
-    
+    <h1>Форма реєстрації</h1>
+    <form id="registrationForm">
+        <label for="firstName">Ім'я:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName">Прізвище:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="birthdate">Дата народження:</label>
+        <input type="text" id="birthdate" name="birthdate" required><br>
+
+        <label>Стать:</label>
+        <input type="radio" id="male" name="gender" value="Чоловік">Чоловік
+        <input type="radio" id="female" name="gender" value="Жінка">Жінка<br>
+
+        <label for="city">Місто:</label>
+        <select id="city" name="city">
+            <option value="Київ">Херсон</option>
+            <option value="Львів">Одеса</option>
+            <option value="Харків">Харків</option>
+        </select><br>
+
+        <label for="address">Адреса:</label>
+        <textarea id="address" name="address"></textarea><br>
+
+        <label>Мови, якими володієте:</label><br>
+        <input type="checkbox" id="english" name="languages" value="Англійська">Англійська
+        <input type="checkbox" id="spanish" name="languages" value="Іспанська">Іспанська
+        <input type="checkbox" id="french" name="languages" value="Французька">Французька<br>
+
+        <input type="button" value="Зберегти" onclick="displayData()">
+    </form>
+
+    <div id="tableContainer">
+    </div>
+
+    <script src="homework.js"></script>
 </body>
 </html>
